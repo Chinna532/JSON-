@@ -1,0 +1,36 @@
+{"student":[
+    {
+        "name":"Rajesh",
+        "email":"rajesh@gmail.com",
+        "mbl":9392403845,
+        "sal":35200,
+        "Address":{
+                "city":"hyderabad",
+                "state":"telangabna"
+            }
+
+    },
+
+    {
+        "name":"Sreeja",
+        "email":"sreeja@gmail.com",
+        "mbl":5552403845,
+        "sal":95200,
+        "Address":{
+                "city":"Warangal",
+                "state":"telangabna"
+            }
+
+    },
+    {
+        "name":"venky",
+        "email":"venky@gmail.com",
+        "mbl":35642403845,
+        "sal":55200,
+        "Address":{
+                "city":"Karimnagar",
+                "state":"Mumbai"
+            }
+
+    }
+]}

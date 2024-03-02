@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>USER DETAILS</h1>
+    <ul id="slist"></ul>
+    
+
+
+<script>
+/*-----------
+        let student={
+            "name":"Rajesh",
+            "email":"rajesh@gmail.com",
+            "mbl":9392403845,
+            "sal":35200,
+            "Address":{
+                "city":"hyderabad",
+                "state":"telangabna"
+            }
+        }
+        console.log(student)
+        ----------*/
+/*---------throug json
+        let s_list=''
+        fetch("./text1.json")
+        .then(Response=>Response.json())
+        .then(sdata=>{
+            sdata.student.forEach(student => {
+                console.log(student)
+                s_list+= `<li>${student.name},${student.Address.city}</li>`
+            });
+            document.getElementById(`slist`).innerHTML = s_list
+        })
+-------------*/
+
+
+/*-----------USING APIS 
+let s_list=''
+        fetch("https://jsonplaceholder.typicode.com/photos")
+        .then(Response=>Response.json())
+        .then(sdata=>{
+            sdata.forEach(student => {
+                console.log(student)
+                s_list+= `<li>${student.title}</li>`
+            });
+            document.getElementById(`slist`).innerHTML = s_list
+        })
+        
+------------*/
+
+
+        let s1={
+                "name":"Rajesh",
+                "email":"rajesh@gmail.com",
+                "mbl":9392403845,
+                "sal":35200
+        }
+        console.log(s1)
+
+        //stringify(object to string)
+        let s=JSON.stringify(s1)
+        console.log(s)
+        //parse(string to object)
+        let ss=JSON.parse(s)
+        console.log(ss)
+</script>
+</body>
+</html>
