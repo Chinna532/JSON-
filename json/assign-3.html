@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input  placeholder="name1" id="a1">
+    <input  placeholder="name2" id="a2">
+    <input type="button" value="Details" id="btn" onclick="fun()">
+    <h1 id="but"></h1>
+
+    <script>
+        function fun() {
+            let x = document.getElementById("a1").value
+            let y = document.getElementById("a2").value
+            
+            let z = x + " " + "Weds"+ " " +y
+            document.getElementById("but").innerHTML = z
+            document.getElementById("but").style.cssText ="color:blue"
+
+        }
+    </script>
+</body>
+</html>

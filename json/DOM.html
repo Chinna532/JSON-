@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!---
+    <div id="first">
+        <p>This is first in div1</p>
+        <p>This is Second In div1</p>
+    </div>
+    <div id="second">
+        <p id="para">This is first in div2</p>
+        <p>This is Second In div2</p>
+    </div>
+    <p id="demo"></p>
+    --->
+
+    <h1 id="a"></h1>
+    <p id="a1"></p>
+    <img src="./1000000228.jpg" alt="" id="image">
+
+    <script>
+        
+        /*--INSERTING FROM JAVASCRIPT TO HTML WEBPAGE---*/
+        /*--
+        let n = document.createElement('p')
+        n.innerText="this is third in div2"
+        let p=document.getElementById("second")
+        p.appendChild(n)--*/
+
+        /*---inserting lements before
+                let n = document.createElement('p')
+                n.innerText="this is third in div2"
+        
+                let parent=document.getElementById("second")
+                let child=document.getElementById("para")
+                parent.insertBefore(n,child)
+        ------*/
+        /* remove
+                let x = document.getElementById("para")
+                x.remove()
+                console.log(x)
+                ---*/
+        /*----add
+            let y = document.getElementById("demo").innerHTML = "Hello This Is Banoth Rajesh"
+            console.log(y)
+           
+        function fun(97){
+        if (97>100) return x-8;
+       else
+       console.log( fun(fun(x+13)))
+       -----*/
+            document.getElementById("a").innerHTML="hello this is rajesh"
+            document.getElementById("a1").innerHTML="hello this is rajesh nayak banoth"
+            document.getElementById("image").src="1000000962.jpg"
+            document.getElementById("a").style.color="blue"
+            document.getElementById("a1").style.cssText="color:green;margin-top:50px"
+
+    </script>
+</body>
+
+</html>

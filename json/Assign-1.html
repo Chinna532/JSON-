@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div>
+        <div class="one">
+            <input type="text" placeholder="enter student name" id="a1">
+            <input type="text" placeholder="enter student roll number" id="a2"><br><br>
+            <input type="text" placeholder="enter student Class" id="a3">
+            <input type="text" placeholder="enter student Age" id="a4"><br><br>
+            <input type="text" placeholder="enter student Gmail" id="a5">
+            <input type="text" placeholder="enter student Phone Nmbr" id="a6"><br><br>
+            <input type="button" value="Get Studebt Details" id="btn" onclick="fun()">
+            <h1 id="details"></h1>
+        </div>
+        <div class="two">
+
+        </div>
+
+    </div>
+    <script>
+        function fun() {
+            let x = document.getElementById("a1").value
+            let x1 = document.getElementById("a2").value
+            let x2 = document.getElementById("a3").value
+            let x3 = document.getElementById("a4").value
+            let x4 = document.getElementById("a5").value
+            let x5 = document.getElementById("a6").value
+
+            let z = x + "<br>" + x1 + "<br>" + x2 + "<br>" + x3 + "<br>" + x4 + "<br>" + x5
+            document.getElementById("details").innerHTML = z
+            document.getElementById("details").style.cssText ="color:blue"
+
+        }
+    </script>
+
+</body>
+
+</html>
