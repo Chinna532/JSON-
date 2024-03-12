@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!---Inline
+    <input type="text">
+    <button id="a" onclick="fun()">change background</button>
+
+    <script>
+        function fun(){
+            document.body.style.backgroundColor="blue"
+        }
+    </script>
+    ---->
+
+    <!----1.Event Properties
+    <input type="text">
+    <button id="a">change background</button>
+    <script>
+        let btn=document.getElementById("a")
+        btn.onclick=fun
+        function fun(){
+            document.body.style.backgroundColor="green"
+        }
+    </script>
+-->
+    <!--------2.event properties
+    <input type="text">
+    <button id="a">change background</button>
+    <script>
+        let btn = document.getElementById("a")
+        btn.onclick = function () {
+
+            document.body.style.backgroundColor = "blue"
+        }
+    </script>
+
+---->
+
+    <!---1.addEventlistener
+    <input type="text">
+    <button id="a">change background</button>
+
+    <script>
+        let btn = document.getElementById("a")
+        btn.addEventListener("click", fun)
+        function fun() {
+            document.body.style.backgroundColor = "blue"
+        }
+    </script>
+-->
+    <!------2.addEventListener
+    <input type="text">
+    <button id="a">change background</button>
+
+    <script>
+        let btn = document.getElementById("a");
+
+    btn.addEventListener("click",function(){
+	document.body.style.backgroundColor = "red";});
+    </script>
+-->
+    <!----addEventlistener-(focus)
+<input type="text" id="b">
+<button id="a">change background</button>
+
+<script>
+    let btn = document.getElementById("b")
+    btn.addEventListener("focus", fun)
+    function fun() {
+        btn.style.backgroundColor = "blue"
+    }
+</script>
+-->
+
+    <!--addEventlistener-(blur)
+<input type="text" id="b">
+<button id="a">change background</button>
+
+<script>
+    let btn = document.getElementById("b")
+    btn.addEventListener("blur", fun)
+    function fun() {
+        btn.style.backgroundColor = "blue"
+    }
+</script>
+--->
+
+
+Password:
+<input type="password" id="pass" placeholder="password" oninput="fun()">
+<p id="result"></p>
+<script>
+   function fun()
+   {
+       let password=document.getElementById("pass").value
+       if((password.length>=1) && (password.length<=5))
+       {
+           document.getElementById("result").innerHTML="weak password"
+           document.getElementById("pass").style.border="2px solid red"
+           document.getElementById("pass").style.outline="1px solid red"
+       }
+       else if((password.length>=6) && (password.length<=10))
+       {
+           document.getElementById("result").innerHTML="strong password"
+           document.getElementById("pass").style.border="2px solid blue"
+           document.getElementById("pass").style.outline="1px solid blue"
+       }
+       else if(password.length>=11)
+       {
+           document.getElementById("result").innerHTML="Excellent password"
+           document.getElementById("pass").style.border="2px solid green"
+           document.getElementById("pass").style.outline="1px solid green"
+       }
+       else
+       {
+           document.getElementById("result").innerHTML=""
+       }
+   }
+   
+</script>
+</body>
+
+</html>
